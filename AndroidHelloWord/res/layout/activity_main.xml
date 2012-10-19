@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="@string/strDataNascimento"
+        tools:context=".MainActivity" />
+
+    <DatePicker
+        android:id="@+id/dtDataNasc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:id="@+id/btnConsultar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dtDataNasc"
+        android:layout_centerVertical="true"
+        android:text="Consultar" />
+
+    <TextView
+        android:id="@+id/strDiaSemana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dtDataNasc"
+        android:layout_below="@+id/btnConsultar"
+        android:layout_marginTop="34dp"
+        android:text="Dia da Semana"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
